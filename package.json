@@ -1,0 +1,61 @@
+{
+  "name": "arr-includes",
+  "version": "0.0.0",
+  "description": "Return true if any of passed values exists in array. Using [in-array][].",
+  "repository": "tunnckoCore/arr-includes",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "in-array": "^0.1.0",
+    "isarray": "^1.0.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "arr",
+    "arr-includes",
+    "array",
+    "check",
+    "exists",
+    "in",
+    "in-array",
+    "includes",
+    "pass",
+    "validate",
+    "value",
+    "values"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "in-array",
+        "isarray",
+        "is-missing",
+        "is-installed",
+        "is-async-function"
+      ]
+    },
+    "reflinks": [
+      "in-array"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
