@@ -13,15 +13,13 @@ var test = require('assertit')
 var arrIncludes = require('./index')
 
 test('should return true if the value exists in the array.', function () {
-  var fixture = ['a', 'b', 'c', 'c']
-  var actual = arrIncludes(fixture, 'a')
+  var actual = arrIncludes(['a', 'b', 'c', 'c'], 'a')
   test.strictEqual(actual, true)
 })
 
 test('should return true if the value exists in the array.', function () {
-  var fixture = ['a', 'b', 'c', 'c']
-  var actual = arrIncludes(fixture, 'd')
-  test.strictEqual(actual, false)
+  var fixture = ['a', 'b', 'bar', 'qux', 'f', 'g']
+  test.strictEqual(arrIncludes(fixture, 'foo'), false)
 })
 
 test('should return true if any of values exists in array', function (done) {
