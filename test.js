@@ -9,17 +9,19 @@
 
 'use strict'
 
-var test = require('assertit')
+var test = require('mukla')
 var arrIncludes = require('./index')
 
-test('should return true if the value exists in the array.', function () {
+test('should return true if the value exists in the array.', function (done) {
   var actual = arrIncludes(['a', 'b', 'c', 'c'], 'a')
   test.strictEqual(actual, true)
+  done()
 })
 
-test('should return true if the value exists in the array.', function () {
+test('should return true if the value exists in the array.', function (done) {
   var fixture = ['a', 'b', 'bar', 'qux', 'f', 'g']
   test.strictEqual(arrIncludes(fixture, 'foo'), false)
+  done()
 })
 
 test('should return true if any of values exists in array', function (done) {
@@ -36,18 +38,21 @@ test('should return false if any of values not exists in array', function (done)
   done()
 })
 
-test('should not blow up on empty arrays', function () {
+test('should not blow up on empty arrays', function (done) {
   var fixture = []
   var actual = arrIncludes(fixture, 'd')
   test.strictEqual(actual, false)
+  done()
 })
 
-test('should not blow up on null', function () {
+test('should not blow up on null', function (done) {
   var actual = arrIncludes(null, 'd')
   test.strictEqual(actual, false)
+  done()
 })
 
-test('should not blow up when no value is passed', function () {
+test('should not blow up when no value is passed', function (done) {
   var actual = arrIncludes(null)
   test.strictEqual(actual, false)
+  done()
 })
