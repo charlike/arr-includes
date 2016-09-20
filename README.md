@@ -16,7 +16,7 @@ npm i arr-includes --save
 const arrIncludes = require('arr-includes')
 ```
 
-### [arrIncludes](index.js#L40)
+### [arrIncludes](index.js#L39)
 > Check any of `values` exists on `arr`. Also works as [in-array][].
 
 **Params**
@@ -44,11 +44,11 @@ console.log(arrIncludes(['foo', 'bar', 'qux'], ['a', 'b', 'foo'])) // => true
 ```
 
 ## Related
-* [in-array](https://www.npmjs.com/package/in-array): Return true if a value exists in an array. Faster than using indexOf. | [homepage](https://github.com/jonschlinkert/in-array)
-* [is-async-function](https://www.npmjs.com/package/is-async-function): Check that given function is async (callback) function or not. Trying to guess… [more](https://www.npmjs.com/package/is-async-function) | [homepage](https://github.com/tunnckocore/is-async-function)
-* [is-installed](https://www.npmjs.com/package/is-installed): Checks that given package is installed on the system - globally or locally. | [homepage](https://github.com/tunnckoCore/is-installed)
-* [is-missing](https://www.npmjs.com/package/is-missing): Check that given `name` or `user/repo` exists in npm registry or in github… [more](https://www.npmjs.com/package/is-missing) | [homepage](https://github.com/tunnckocore/is-missing)
-* [isarray](https://www.npmjs.com/package/isarray): Array#isArray for older browsers | [homepage](https://github.com/juliangruber/isarray)
+- [in-array](https://www.npmjs.com/package/in-array): Return true if a value exists in an array. Faster than using indexOf… [more](https://github.com/jonschlinkert/in-array) | [homepage](https://github.com/jonschlinkert/in-array "Return true if a value exists in an array. Faster than using indexOf and won't blow up on null values.")
+- [is-async-function](https://www.npmjs.com/package/is-async-function): Is function really asynchronous function? Trying to guess that based on check if… [more](https://github.com/tunnckocore/is-async-function#readme) | [homepage](https://github.com/tunnckocore/is-async-function#readme "Is function really asynchronous function? Trying to guess that based on check if [common-callback-names][] exists as function arguments names or you can pass your custom.")
+- [is-installed](https://www.npmjs.com/package/is-installed): Checks that given package is installed on the system - globally or locally. | [homepage](https://github.com/tunnckoCore/is-installed#readme "Checks that given package is installed on the system - globally or locally.")
+- [is-missing](https://www.npmjs.com/package/is-missing): Check that given `name` or `user/repo` exists in npm registry or in github… [more](https://github.com/tunnckocore/is-missing#readme) | [homepage](https://github.com/tunnckocore/is-missing#readme "Check that given `name` or `user/repo` exists in npm registry or in github as user repository.")
+- [isarray](https://www.npmjs.com/package/isarray): Array#isArray for older browsers | [homepage](https://github.com/juliangruber/isarray "Array#isArray for older browsers")
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/arr-includes/issues/new).  
@@ -102,3 +102,4 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [new-message-url]: https://github.com/tunnckoCore/ama
 [new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
 
+[common-callback-names]: https://github.com/tunnckocore/common-callback-names
