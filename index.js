@@ -7,8 +7,7 @@
 
 'use strict'
 
-var isArray = require('isarray')
-var inArray = require('in-array')
+var utils = require('./utils')
 
 /**
  * > Check any of `values` exists on `arr`. Also works as [in-array][].
@@ -38,12 +37,12 @@ var inArray = require('in-array')
  */
 
 module.exports = function arrIncludes (arr, values) {
-  if (!isArray(values)) return inArray(arr, values)
+  if (!utils.isArray(values)) return utils.inArray(arr, values)
   var len = values.length
   var i = 0
 
   while (i < len) {
-    if (inArray(arr, values[i++])) {
+    if (utils.inArray(arr, values[i++])) {
       return true
     }
   }
