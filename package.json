@@ -1,6 +1,6 @@
 {
   "name": "arr-includes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Return true if any of passed values exists in array. Using [in-array][].",
   "repository": "tunnckoCore/arr-includes",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
