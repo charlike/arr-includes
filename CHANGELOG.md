@@ -1,7 +1,11 @@
 
 
+## 1.0.2 - 2016-09-21
+- Release v1.0.2 / npm@v1.0.2
+- add missing `coveralls` to devDeps, closes #3
+
 ## 1.0.1 - 2016-09-20
-- Release v1.0.1
+- Release v1.0.1 / npm@v1.0.1
 - use `lazy-cache`, closes #2
 - update package.json: npm scripts
 - update travis.yml
