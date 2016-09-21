@@ -22,6 +22,7 @@
     "lazy-cache": "^2.0.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.14",
     "mukla": "^0.4.4",
     "nyc": "^8.3.0",
     "pre-commit": "^1.1.3",
