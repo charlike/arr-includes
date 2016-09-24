@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "in-array": "^0.1.2",
-    "isarray": "^1.0.0",
+    "isarray": "^2.0.0",
     "lazy-cache": "^2.0.1"
   },
   "devDependencies": {
