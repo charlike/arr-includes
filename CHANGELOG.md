@@ -1,3 +1,24 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/tunnckocore/arr-includes/compare/v1.0.2...v2.0.0) (2016-10-26)
+
+
+### Features
+
+* **index:** returns the index of the match, true if index is 0 ([9c7a075](https://github.com/tunnckocore/arr-includes/commit/9c7a075))
+
+
+### BREAKING CHANGES
+
+* index: returns an index instead of true; it returns false only if found index is 0; always
+
+returns positive value
+
+
+
 
 
 ## 1.0.2 - 2016-09-21
