@@ -17,31 +17,40 @@ npm i arr-includes --save
 const arrIncludes = require('arr-includes')
 ```
 
-### [arrIncludes](index.js#L39)
+### [arrIncludes](index.js#L49)
 > Check any of `values` exists on `arr`. Also works as [in-array][].
 
 **Params**
 
 * `arr` **{Array}**: array to check    
 * `values` **{Array|String}**: array or anything that [in-array][] supports.    
-* `returns` **{Boolean}**: always boolean false or true, never throws  
+* `returns` **{Boolean|Number}**: returns `false` if not found, `true` if **index is 0** from the array, otherwise `number` index  
 
 **Example**
 
 ```js
 var arrIncludes = require('arr-includes')
 
-console.log(arrIncludes([1, 'bar', 3], 2)) // => false
-console.log(arrIncludes([1, 'bar', 3], 3)) // => true
+console.log(arrIncludes([1, 'bar', 55], 2)) // => false
+console.log(arrIncludes([1, 'bar', 3], 3)) // => 2
 
 console.log(arrIncludes([1, 'bar', 3, true], false)) // => false
-console.log(arrIncludes([1, 'bar', 3, true], true)) // => true
+console.log(arrIncludes([1, 'bar', 44, true], true)) // => 3
 
 console.log(arrIncludes(['foo', 'bar'], 'baz')) // => false
 console.log(arrIncludes(['foo', 'bar'], 'foo')) // => true
+console.log(arrIncludes(['qux', 'foo', 'bar'], 'foo')) // => 1
+console.log(arrIncludes([true, 'qqq', 'bar'], true)) // => true
+console.log(arrIncludes(['true', 'qqq', 'bar'], true)) // => false
+console.log(arrIncludes(['qqq', 'bar', true], true)) // => 2
+console.log(arrIncludes(['qqq', 'true', 'bar'], true)) // => false
+console.log(arrIncludes([false, 'foo', null, 'bar'], null)) // => 2
 
 console.log(arrIncludes(['foo', 'bar', 'qux'], ['a', 'b', 'c'])) // => false
+console.log(arrIncludes(['b', 'a', 'c'], ['a', 'b', 'c'])) // => 1
+console.log(arrIncludes(['foo', 'bb', 'b'], ['a', 'b'])) // => 2
 console.log(arrIncludes(['foo', 'bar', 'qux'], ['a', 'b', 'foo'])) // => true
+console.log(arrIncludes(['bar', 123, 'foo', 'qux'], ['a', 'b', 'foo'])) // => 2
 ```
 
 ## Related
