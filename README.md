@@ -18,12 +18,12 @@ const arrIncludes = require('arr-includes')
 ```
 
 ### [arrIncludes](index.js#L49)
-> Check any of `values` exists on `arr`. Also works as [in-array][].
+> Check any of `values` exists on `arr`.
 
 **Params**
 
 * `arr` **{Array}**: array to check    
-* `values` **{Array|String}**: array or anything that [in-array][] supports.    
+* `values` **{Array|String}**: array or string    
 * `returns` **{Boolean|Number}**: returns `false` if not found, `true` if **index is 0** from the array, otherwise `number` index  
 
 **Example**

@@ -10,7 +10,7 @@
 var utils = require('./utils')
 
 /**
- * > Check any of `values` exists on `arr`. Also works as [in-array][].
+ * > Check any of `values` exists on `arr`.
  *
  * **Example**
  *
@@ -40,7 +40,7 @@ var utils = require('./utils')
  * ```
  *
  * @param  {Array} `arr` array to check
- * @param  {Array|String} `values` array or anything that [in-array][] supports.
+ * @param  {Array|String} `values` array or string
  * @return {Boolean|Number} returns `false` if not found, `true` if **index is 0**
  *                                  from the array, otherwise `number` index
  * @api public
