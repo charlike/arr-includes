@@ -1,10 +1,11 @@
-# [arr-includes][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
+# [arr-includes][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url] 
 
 > Return true if any of passed values exists in array. Using [in-array][].
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
 ## Install
+
 ```
 npm i arr-includes --save
 ```
@@ -44,10 +45,10 @@ console.log(arrIncludes(['foo', 'bar', 'qux'], ['a', 'b', 'foo'])) // => true
 ```
 
 ## Related
-- [in-array](https://www.npmjs.com/package/in-array): Return true if a value exists in an array. Faster than using indexOf… [more](https://github.com/jonschlinkert/in-array) | [homepage](https://github.com/jonschlinkert/in-array "Return true if a value exists in an array. Faster than using indexOf and won't blow up on null values.")
-- [is-async-function](https://www.npmjs.com/package/is-async-function): Is function really asynchronous function? Trying to guess that based on check if… [more](https://github.com/tunnckocore/is-async-function#readme) | [homepage](https://github.com/tunnckocore/is-async-function#readme "Is function really asynchronous function? Trying to guess that based on check if [common-callback-names][] exists as function arguments names or you can pass your custom.")
-- [is-installed](https://www.npmjs.com/package/is-installed): Checks that given package is installed on the system - globally or locally. | [homepage](https://github.com/tunnckoCore/is-installed#readme "Checks that given package is installed on the system - globally or locally.")
-- [is-missing](https://www.npmjs.com/package/is-missing): Check that given `name` or `user/repo` exists in npm registry or in github… [more](https://github.com/tunnckocore/is-missing#readme) | [homepage](https://github.com/tunnckocore/is-missing#readme "Check that given `name` or `user/repo` exists in npm registry or in github as user repository.")
+- [in-array](https://www.npmjs.com/package/in-array): Return true if a value exists in an array. Faster than using… [more](https://github.com/jonschlinkert/in-array) | [homepage](https://github.com/jonschlinkert/in-array "Return true if a value exists in an array. Faster than using indexOf and won't blow up on null values.")
+- [is-async-function](https://www.npmjs.com/package/is-async-function): Is function really asynchronous function? Trying to guess that based on check… [more](https://github.com/tunnckocore/is-async-function#readme) | [homepage](https://github.com/tunnckocore/is-async-function#readme "Is function really asynchronous function? Trying to guess that based on check if [common-callback-names][] exists as function arguments names or you can pass your custom.")
+- [is-installed](https://www.npmjs.com/package/is-installed): Checks that given package is installed on the system - globally or… [more](https://github.com/tunnckoCore/is-installed#readme) | [homepage](https://github.com/tunnckoCore/is-installed#readme "Checks that given package is installed on the system - globally or locally.")
+- [is-missing](https://www.npmjs.com/package/is-missing): Check that given `name` or `user/repo` exists in npm registry or in… [more](https://github.com/tunnckocore/is-missing#readme) | [homepage](https://github.com/tunnckocore/is-missing#readme "Check that given `name` or `user/repo` exists in npm registry or in github as user repository.")
 - [isarray](https://www.npmjs.com/package/isarray): Array#isArray for older browsers | [homepage](https://github.com/juliangruber/isarray "Array#isArray for older browsers")
 
 ## Contributing
@@ -64,7 +65,10 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [npmjs-img]: https://img.shields.io/npm/v/arr-includes.svg?label=arr-includes
 
 [license-url]: https://github.com/tunnckoCore/arr-includes/blob/master/LICENSE
-[license-img]: https://img.shields.io/badge/license-MIT-blue.svg
+[license-img]: https://img.shields.io/npm/l/arr-includes.svg
+
+[downloads-url]: https://www.npmjs.com/package/arr-includes
+[downloads-img]: https://img.shields.io/npm/dm/arr-includes.svg
 
 [codeclimate-url]: https://codeclimate.com/github/tunnckoCore/arr-includes
 [codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/arr-includes.svg
