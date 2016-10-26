@@ -15,11 +15,14 @@ var arrIncludes = require('./index')
 test('should return true if the value exists in the array.', function (done) {
   var fixture = ['a', 'b', 'bar', 'qux', 'f', 'g']
   test.strictEqual(arrIncludes(fixture, 'foo'), false)
+  test.strictEqual(arrIncludes(['true', 'qqq', 'bar'], true), false)
+  test.strictEqual(arrIncludes([true, 'qqq', 'bar'], true), true)
   done()
 })
 
 test('should return true if any of values exists in array', function (done) {
   test.strictEqual(arrIncludes([1, 'bar', 3], 2), false)
+
   test.strictEqual(arrIncludes([1, 'bar', 3], 3), 2)
   test.strictEqual(arrIncludes([1, 'bar', 3], ['foo', 'qq', 3]), 2)
   test.strictEqual(arrIncludes(['foo', 'bar', 'baz'], ['foo', 'qux']), true)
