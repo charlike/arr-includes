@@ -32,19 +32,22 @@ var utils = require('./utils')
  *
  * @param  {Array} `arr` array to check
  * @param  {Array|String} `values` array or anything that [in-array][] supports.
- * @return {Boolean} always boolean false or true, never throws
+ * @return {Boolean|Number} returns `false` if not found, `true` if **index is 0**
+ *                                  from the array, otherwise `number` index
  * @api public
  */
 
 module.exports = function arrIncludes (arr, values) {
-  if (!utils.isArray(values)) return utils.inArray(arr, values)
+  if (!utils.arr.isArray(values)) return utils.inArray(arr, values)
   var len = values.length
-  var i = 0
+  var i = -1
 
-  while (i < len) {
-    if (utils.inArray(arr, values[i++])) {
-      return true
+  while (i++ < len) {
+    var j = utils.inArray(arr, values[i])
+    if (j) {
+      return j
     }
   }
+
   return false
 }
