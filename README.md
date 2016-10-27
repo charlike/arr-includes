@@ -1,6 +1,6 @@
 # [arr-includes][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] [![npm downloads][downloads-img]][downloads-url] 
 
-> Return true if any of passed values exists in array.
+> Return positive value if any of passed values exists in array.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -19,12 +19,6 @@ const arrIncludes = require('arr-includes')
 
 ### [arrIncludes](index.js#L49)
 > Check any of `values` exists on `arr`.
-
-**Params**
-
-* `arr` **{Array}**: array to check    
-* `values` **{Array|String}**: array or string    
-* `returns` **{Boolean|Number}**: returns `false` if not found, `true` if **index is 0** from the array, otherwise `number` index  
 
 **Example**
 
@@ -52,6 +46,12 @@ console.log(arrIncludes(['foo', 'bb', 'b'], ['a', 'b'])) // => 2
 console.log(arrIncludes(['foo', 'bar', 'qux'], ['a', 'b', 'foo'])) // => true
 console.log(arrIncludes(['bar', 123, 'foo', 'qux'], ['a', 'b', 'foo'])) // => 2
 ```
+
+**Params**
+
+* `arr` **{Array}**: array to check    
+* `values` **{Array|String}**: array or string    
+* `returns` **{Boolean|Number}**: returns `false` if not found, `true` if **index is 0** from the array, otherwise `number` index  
 
 ## Related
 - [in-array](https://www.npmjs.com/package/in-array): Return true if a value exists in an array. Faster than using… [more](https://github.com/jonschlinkert/in-array) | [homepage](https://github.com/jonschlinkert/in-array "Return true if a value exists in an array. Faster than using indexOf and won't blow up on null values.")
