@@ -27,7 +27,7 @@
   "devDependencies": {
     "commitizen": "^2.8.6",
     "coveralls": "^2.11.12",
-    "cz-conventional-changelog": "^1.2.0",
+    "cz-conventional-changelog": "^2.0.0",
     "mukla": "^0.4.1",
     "nyc": "^10.1.0",
     "pre-commit": "^1.1.3",
