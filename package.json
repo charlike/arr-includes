@@ -1,6 +1,6 @@
 {
   "name": "arr-includes",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Return positive value if any of passed values exists in array, or optionally an index.",
   "repository": "tunnckoCore/arr-includes",
   "author": "Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)",

@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.3"></a>
+## [2.0.3](https://github.com/tunnckocore/arr-includes/compare/v2.0.2...v2.0.3) (2017-03-11)
+
+
+### Bug Fixes
+
+* **coverage:** force nyc to 100% ([e99a093](https://github.com/tunnckocore/arr-includes/commit/e99a093))
+* **deps:** update deps ([8691d38](https://github.com/tunnckocore/arr-includes/commit/8691d38))
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/tunnckocore/arr-includes/compare/v2.0.1...v2.0.2) (2016-10-29)
 
