@@ -21,8 +21,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "lazy-arrayify": "^1.0.3",
-    "lazy-cache": "^2.0.1"
+    "arrify": "^1.0.1"
   },
   "devDependencies": {
     "commitizen": "^2.8.6",

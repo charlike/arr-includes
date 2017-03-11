@@ -7,7 +7,7 @@
 
 'use strict'
 
-var utils = require('./utils')
+var arrayify = require('arrify')
 
 /**
  * > Check any of `values` exists on `arr`.
@@ -47,16 +47,29 @@ var utils = require('./utils')
  */
 
 module.exports = function arrIncludes (arr, values) {
-  if (!utils.arr.isArray(values)) return utils.inArray(arr, values)
+  if (!Array.isArray(values)) return inArray(arr, values)
   var len = values.length
   var i = -1
 
   while (i++ < len) {
-    var j = utils.inArray(arr, values[i])
+    var j = inArray(arr, values[i])
     if (j) {
       return j
     }
   }
 
+  return false
+}
+
+function inArray (arr, val) {
+  arr = arrayify(arr)
+  var len = arr.length
+  var i = null
+
+  for (i = 0; i < len; i++) {
+    if (arr[i] === val) {
+      return i === 0 ? true : i
+    }
+  }
   return false
 }
