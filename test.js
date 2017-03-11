@@ -1,7 +1,7 @@
 /*!
  * arr-includes <https://github.com/tunnckoCore/arr-includes>
  *
- * Copyright (c) 2016 Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)
+ * Copyright (c) Charlike Mike Reagent <@tunnckoCore> (https://i.am.charlike.online)
  * Released under the MIT license.
  */
 
