@@ -82,7 +82,15 @@
     },
     "lint": {
       "reflinks": true
-    }
+    },
+    "reflinks": [
+      "charlike",
+      "commitizen",
+      "common-callback-names",
+      "standard-version",
+      "verb",
+      "verb-generate-readme"
+    ]
   },
   "nyc": {
     "check-coverage": true,
